@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مظلات ممرات ومداخل | حداد مظلات برجولات الرياض</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary-blue: #0b0c53; --secondary-orange: #e86217; --bg-light: #f9f9f9; --text-dark: #333; --text-light: #fff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        a { text-decoration: none; }
+        .btn-orange { display: inline-block; background-color: var(--secondary-orange); color: var(--text-light); padding: 10px 30px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; border: none; cursor: pointer; transition: 0.3s; margin-bottom: 20px;}
+        .btn-orange:hover { background-color: #d15612; }
+        .section-padding { padding: 50px 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* تنسيق رأس الصفحة (Header) */
+        .page-header { background-color: var(--primary-blue); color: var(--text-light); text-align: center; padding: 40px 20px; border-top: 15px solid var(--secondary-orange); border-bottom: 5px solid var(--secondary-orange); }
+        .page-header h1 { color: var(--secondary-orange); font-size: 2.5rem; margin-bottom: 15px; }
+        .page-header p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+        
+        /* تنسيق معرض الصور بالنصوص الوصفية */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        .gallery-item { background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd; display: flex; flex-direction: column; }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .gallery-item h3 { color: var(--primary-blue); font-size: 1.2rem; margin-bottom: 10px; }
+        .gallery-item p { font-size: 0.95rem; color: #555; text-align: justify; line-height: 1.8; }
+        
+        /* تنسيق الفوتر */
+        footer { background-color: var(--primary-blue); color: white; text-align: center; padding: 20px; border-top: 2px solid var(--secondary-orange); margin-top: 40px; }
+        
+        .whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 20px; /* غيرها لـ left: 20px لو تبغاه يسار */
+    background: #25D366;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /* الايقونة يمين والنص يسار */
+    gap: 10px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* حركة الطفو */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* يخلي الايقونة بيضاء */
+}
+
+/* للموبايل */
+@media (max-width: 600px) {
+    .whatsapp-float {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة الخاص بالقسم -->
+    <header class="page-header">
+        <div class="container">
+            <h1>قسم السواتر</h1>
+            <p>توريد وتركيب أحدث وأجمل السواتر الحديديه والبلاستيكيه للمنازل والشركات في الرياض. حماية خصوصيه بتصاميم عصرية ومواد عالية الجودة.</p>
+        </div>
+    </header>
+
+    <!-- محتوى الصفحة (معرض الصور) -->
+    <section class="section-padding">
+        <div class="container" style="text-align: center;">
+            
+            <!-- زر العودة للصفحة الرئيسية -->
+            <a href="index.html" class="btn-orange"><i class="fa-solid fa-house"></i> العودة للصفحة الرئيسية</a>
+            
+            <!-- شبكة الصور -->
+            <div class="gallery-grid">
+                
+                <!-- صورة 1 -->
+                <div class="gallery-item">
+        <img src="images/ساتر1.jpg" alt="تركيب سواتر حديد قص ليزر اشكال حسب الطلب">
+                    <h3>توريد وتركيب سواتر قص ليزر</h3>
+                    <p>تنفيذ وتركيب سواتر قص ليزر للاحواش والفلل بالرياض باستخدام أفضل أنواع الحديد مع الدهان ضد الرطوبه والمطر. توفر هذه السواتر حمايه خصوصيه مع منظرا جميل ومثالي للمنازل والفلل، مع جوده واحترافيه كاملة في التركيب، وتضفي لمسة جمالية وعصرية على ديكور المنزل الخارجي.</p>
+                </div>
+                
+                <!-- صورة 2 -->
+                <div class="gallery-item">
+         <img src="images/ساتر2.jpg" alt="توريد وتركيب سواتر بديل الخشب البلاستيكي">
+                    <h3>سواتر بديل الخشبwpc</h3>
+                    <p> توريد وتركيب سواتر من بديل الخسب البلاستيكي مظلع او ساده حسب الطلب، تعتبر مظلات سواتر بديل الخشب البلاستيكي خياراً مثالياً يعطيك منظر واقعي وتراثي، مناسب للفنادق والشركات والمنازل والفلل، حيث تعطيك مظهراً طبيعياً، كما انه مقاوم  للرطوبه والامطار، وتتوفر بألوان عديده تناسب كافة الاحتياجات.</p>
+                </div>
+
+                <!-- صورة 3 -->
+                <div class="gallery-item">
+        <img src="images/ساتر3.jpg" alt="توريد وتركيب سواتر بلاستيك مجدول">
+                    <h3>سواتر بلاستيك مجدول</h3>
+                    <p>تركيب سواتر بلاستيك مجدول بمظهر جذاب وأنيق يجمع بين الفخامة والقوه. مناسب لأحواش البيوت والفلل والاستراحات في الرياض، وتتميز بمقاومتها العالية للرطوبه والامطار، مما يضمن عمراً افتراضياً طويلاً وتصميماً لا يضاهى.</p>
+                </div>
+
+                <!-- صورة 4 -->
+                <div class="gallery-item">
+          <img src="images/ساتر4.jpg" alt="تركيب سواتر شرائح حديد">
+                    <h3>سواتر شرائح حديد</h3>
+                    <p>تركيب سواتر شرائح حديد مع دهان فرن مقاوم للصدأ مناسب لاحواش المنازل والفلل والقصور والمجمعات التجارية والشركات. بألوان متعددة  واتقان في التركيب تقاوم الرياح الشديدة بفعالية عالية.</p>
+                </div>
+
+              <!-- صورة 5 -->
+                <div class="gallery-item">
+         <img src="images/ساتر5.jpg" alt="تفصيل سواتر حديد مجدول">
+                    <h3>توريد وتركيب سواتر حديد مجدول</h3>
+                    <p>نقوم بتركيب سواتر حديد مجدول بمواصفات عالية لتحمل أقسى الظروف. يتم تصنيع السواتر من ألواح الحديد المجلفن المجدول بسماكات مختلفة مع طلاء مقاوم للصدأ والرطوبة. توفر خصوصية كاملة وحماية ضد الرياح والأتربة. مناسبة للمدارس، المزارع، والمستودعات. متينة وعمرها الافتراضي طويل مع ضمان ضد التآكل.</p>
+                </div>
+                
+               <!-- صورة 6 -->
+                <div class="gallery-item">
+         <img src="images/ساتر6.jpg" alt="سواتر قماش PVC مجدول">
+                    <h3>توريد وتركيب سواتر قماش PVC مجدول</h3>
+                    <p>نقدم سواتر قماش PVC مجدول عالي الجودة مقاوم لأشعة الشمس والماء والقطع. يتميز بخفة الوزن وسهولة التركيب والفك مع الحفاظ على الخصوصية 100%. متوفر بألوان متعددة ويستخدم بكثرة في الاستراحات والملاعب ومواقف السيارات. لا يتأثر بالعوامل الجوية ويتميز بشكله الجذاب وسعره المناسب.</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+
+<div class="gallery-item" style="margin-top: 50px; border: 1px solid #e0e0e0; border-radius: 16px; padding: 35px 25px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+    
+    <!-- العنوان -->
+    <div style="text-align: center; margin-bottom: 30px;">
+        <div style="width: 65px; height: 65px; background: #fff8f3; border: 2px solid var(--secondary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+            <i class="fa-solid fa-fence" style="font-size: 1.8rem; color: var(--secondary-orange);"></i>
+        </div>
+        <h3 style="color: #222; font-size: 1.8rem; margin: 0 0 8px 0; font-weight: 700;">تركيب السواتر</h3>
+        <p style="color: #777; font-size: 1rem;">خصوصية كاملة وحماية من الرياح والأتربة بجميع أنواع السواتر وبضمان 5 سنوات</p>
+        <div style="width: 60px; height: 3px; background: var(--secondary-orange); margin: 15px auto; border-radius: 2px;"></div>
+    </div>
+
+    <!-- المقدمة الطويلة -->
+    <div style="line-height: 2; font-size: 1.05rem; color: #444; margin-bottom: 30px; text-align: justify;">
+        <p>نحن رواد في <b style="color: var(--primary-blue);">تركيب السواتر</b> في الرياض وجميع مناطق المملكة. نوفر لك حلول متكاملة لزيادة الخصوصية وحماية منزلك، مزرعتك، أو منشأتك من أعين الجيران والرياح والأتربة والشمس.</p>
+        
+        <p>نقوم بتنفيذ جميع أنواع السواتر بأعلى معايير الجودة: <b>السواتر الحديد</b>، <b>السواتر الخشبية</b>، <b>السواتر البلاستيك</b>، <b>سواتر الشينكو</b>، و<b>سواتر القماش</b>. نستخدم هياكل حديد مجلفن مقاوم للصدأ وبألوان وتصاميم تناسب جميع الأذواق. فريقنا متخصص في تركيب سواتر للأسطح، الحدائق، المزارع، والمنشآت الحكومية والخاصة.</p>
+
+        <p>نقدم معاينة مجانية للموقع، وسرعة في التنفيذ خلال 3 أيام، وضمان 5 سنوات على الهيكل والتركيب. أسعارنا منافسة وتبدأ من 80 ريال للمتر. جميع أعمالنا تشمل عزل كامل وعمل أساسات قوية تتحمل الرياح.</p>
+    </div>
+    
+    <!-- الخدمات -->
+    <div style="margin-bottom: 30px;">
+        <h4 style="color: var(--secondary-orange); font-size: 1.2rem; margin-bottom: 18px; font-weight: 600;">
+            <i class="fa-solid fa-list-check"></i> أنواع السواتر التي نقدمها:
+        </h4>
+        <div style="display: grid; gap: 10px;">
+            <div style="background: #fafafa; padding: 14px 16px; border-radius: 10px; border-right: 3px solid var(--secondary-orange);">
+                <i class="fa-solid fa-circle-check" style="color: var(--secondary-orange); margin-left: 8px;"></i>
+                <b style="color: #333;">سواتر حديد مجلفن:</b> أقوى الأنواع وأكثرها تحملاً، شرائح حديد مفرغة أو مصمتة بتصاميم عصرية مقاومة للرياح والصدأ
+            </div>
+            <div style="background: #fafafa; padding: 14px 16px; border-radius: 10px; border-right: 3px solid var(--secondary-orange);">
+                <i class="fa-solid fa-circle-check" style="color: var(--secondary-orange); margin-left: 8px;"></i>
+                <b style="color: #333;">سواتر خشبية وبديل الخشب WPC:</b> شكل فخم وأنيق للفلل والحدائق، مقاوم للماء والحشرات والرطوبة مع عزل صوت
+            </div>
+            <div style="background: #fafafa; padding: 14px 16px; border-radius: 10px; border-right: 3px solid var(--secondary-orange);">
+                <i class="fa-solid fa-circle-check" style="color: var(--secondary-orange); margin-left: 8px;"></i>
+                <b style="color: #333;">سواتر بلاستيك PVC:</b> خفيفة الوزن وسعرها مناسب، مقاومة للماء والشمس والألوان ثابتة، سهلة التركيب والصيانة
+            </div>
+            <div style="background: #fafafa; padding: 14px 16px; border-radius: 10px; border-right: 3px solid var(--secondary-orange);">
+                <i class="fa-solid fa-circle-check" style="color: var(--secondary-orange); margin-left: 8px;"></i>
+                <b style="color: #333;">سواتر شينكو ومعرج:</b> اقتصادية وعملية للمزارع والمستودعات، عازلة للشمس والمطر 100% وتتحمل العوامل الجوية
+            </div>
+            <div style="background: #fafafa; padding: 14px 16px; border-radius: 10px; border-right: 3px solid var(--secondary-orange);">
+                <i class="fa-solid fa-circle-check" style="color: var(--secondary-orange); margin-left: 8px;"></i>
+                <b style="color: #333;">سواتر قماش PVC:</b> مرنة وسهلة الفك والتركيب، عازلة للحرارة والشمس، مناسبة للأسطح والمسابح
+            </div>
+        </div>
+    </div>
+
+    <!-- المميزات -->
+    <div style="background: #fff8f3; padding: 20px; border-radius: 12px; border: 1px dashed var(--secondary-orange); text-align: center; margin-bottom: 20px;">
+        <h4 style="color: #333; font-size: 1.15rem; margin-bottom: 12px;"><i class="fa-solid fa-star" style="color: var(--secondary-orange);"></i> مميزات تركيب السواتر لدينا</h4>
+        <p style="margin: 0; line-height: 2; color: #555; font-size: 0.95rem;">
+            جميع أنواع السواتر • هيكل حديد مجلفن • خصوصية 100% • عزل شمس ورياح وأتربة • تركيب خلال 3 أيام • ضمان 5 سنوات • أسعار تبدأ من 80 ريال للمتر • معاينة وتصميم مجاني
+        </p>
+    </div>
+    
+    <!-- زر -->
+    <div style="text-align: center; margin-top: 25px;">
+        <a href="https://wa.me/966558864363" style="background: var(--secondary-orange); color: #fff; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1.05rem;">
+            <i class="fa-brands fa-whatsapp"></i> اطلب معاينة مجانية الآن
+        </a>
+    </div>
+
+</div>
+
+    <!-- تذييل الموقع -->
+    <footer>
+        <div class="container">
+            <h3 style="color: var(--secondary-orange); margin-bottom: 10px;">حداد سواتر الرياض</h3>
+            <p style="font-size: 0.9rem;">© جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+<!-- أزرار التواصل العائمة -->
+<style>
+.floating-contact {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-contact a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    animation: floatBtn 2s ease-in-out infinite;
+}
+
+.floating-contact a:hover {
+    transform: scale(1.1);
+}
+
+/* زر الواتساب - اخضر غامق */
+.whatsapp-btn { 
+    background: #128C7E; 
+}
+
+/* زر الاتصال - ازرق */
+.call-btn { 
+    background: #0b0c53; 
+}
+
+@keyframes floatBtn {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* للموبايل */
+@media (max-width: 600px) {
+    .floating-contact a {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+</style>
+
+<div class="floating-contact">
+    <!-- 1. زر الواتساب - أيقونة SVG متوافقة 100% -->
+    <a href="https://wa.me/966558864363?text=السلام%20عليكم%20اريد%20خدمة%20السواتر" 
+       class="whatsapp-btn" target="_blank" title="واتساب">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.57 6.57 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.099-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73.0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.17-.478 1.338-.94.166-.462.166-.856.116-.94-.05-.083-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+    
+    <!-- 2. زر الاتصال بدون أي تغيير -->
+    <a href="tel:0558864363" class="call-btn" title="اتصال">
+        📞
+    </a>
+</div>
+
+</body>
+</html>

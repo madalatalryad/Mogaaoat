@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حداد مظلات سواتر الرياض</title>
+    <!-- استدعاء خط Cairo للحصول على مظهر احترافي للنصوص العربية -->
+
+    <style>
+        
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حداد مظلات برجولات الرياض</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    background: #0d1b4c;
+    color: #ffffff;
+    direction: rtl;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Cairo', sans-serif; /* تغيير الخط ليشمل كافة النصوص */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.2;
+}
+
+h1 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 25px;
+}
+
+
+        
+        
+        /* الألوان الأساسية والمتغيرات */
+        :root {
+            --primary-blue: #0b0c53;
+            --secondary-orange: #e86217;
+            --bg-light: #f9f9f9;
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
+        /* إعدادات عامة */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        
+        /* الأزرار */
+        .btn-orange {
+            display: inline-block;
+            background-color: var(--secondary-orange);
+            color: var(--text-light);
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-orange:hover {
+            background-color: #d15612;
+        }
+        .btn-blue {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 8px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+        
+        /* التنسيقات المشتركة للأقسام */
+        .section-padding {
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .dark-section {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            border-top: 15px solid var(--secondary-orange);
+        }
+        .section-title-orange {
+            color: var(--secondary-orange);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .section-title-blue {
+            color: var(--primary-blue);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .decorative-dots {
+            color: var(--secondary-orange);
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* قسم البداية (Hero) */
+        .hero {
+            text-align: center;
+        }
+        .hero h1 {
+            color: var(--secondary-orange);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .hero-offer {
+            color: var(--secondary-orange);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        /* قسم الخدمات */
+        .services-intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background-color: #fff;
+            border: 2px solid var(--primary-blue);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+            height: 120px; /* لتوحيد ارتفاع النصوص */
+            overflow: hidden;
+        }
+        .service-image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            border: 1px solid #ccc;
+        }
+        .service-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* قسم لماذا نحن */
+        .why-us-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .why-us-list li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+        .why-us-list li i {
+            color: var(--secondary-orange);
+        }
+
+        /* قسم آراء العملاء */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .testimonial-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .testimonial-card h4 {
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        /* قسم من نحن والتواصل */
+        .contact-box {
+            border: 1px solid var(--secondary-orange);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .contact-methods div {
+            text-align: center;
+        }
+        .contact-methods i {
+            font-size: 2rem;
+            color: var(--secondary-orange);
+            margin-bottom: 10px;
+        }
+        
+        /* الفوتر */
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--secondary-orange);
+            margin-top: 20px;
+        }
+        .footer-services li {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 10px 0;
+        }
+        
+        
+        .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+.btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-phone { background-color: var(--secondary-orange); }
+.btn-phone:hover { background-color: #d15612; }
+.btn-whatsapp { background-color: #25D366; }
+.btn-whatsapp:hover { background-color: #1ebe5b; }
+.btn-contact i { font-size: 1.4rem; }
+        
+        .btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+        
+        .hero-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    min-width: 160px; /* يخليهم نفس العرض */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-call {
+    background: linear-gradient(135deg, #FF7A00, #FF5500); /* برتقالي احترافي */
+}
+
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366, #1EBE5B); /* اخضر احترافي */
+}
+
+.btn-hero i {
+    font-size: 1.2rem;
+}
+
+/* للجوال: يخليهم تحت بعض */
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-hero {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+.hero-bg-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideHero 50s infinite ease-in-out;
+    z-index: 0;
+}
+
+@keyframes slideHero {
+    0% { background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920'); }
+    20% { background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920'); }
+    40% { background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920'); }
+    60% { background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920'); }
+    80% { background-image: url('https://images.unsplash.com/photo-1631541909066-6f0a1b9d2d3e?w=1920'); }
+    100% { background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920'); }
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+
+</style>
+
+<!-- رابط استدعاء خط القاهرة -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- قسم الهيرو (مقدمة الموقع) -->
+<section class="dark-section section-padding hero">
+    <div class="container">
+      <h1>حداد مظلات برجولات الرياض</h1>
+        <p>متخصصون في تنفيذ وتركيب جميع اعمال المظلات، السواتر، وبيوت الشعر والدهانات والديكورات بجودة عالية ومعايير احترافية.</p>
+        
+        <p>نحرص على استخدام أفضل الخامات لضمان المتانة وتحمل الظروف المناخية، مع تقديم تصاميم عصرية وعملية تناسب مختلف الاحتياجات.<br>
+        نمتلك خبرة في تنفيذ المشاريع السكنية والتجارية، ونسعى دائما لتقديم اعمال تجمع بين القوة والجمال، مع دقة في التنفيذ واهتمام بأدق التفاصيل. هدفنا هو تقديم حلول موثوقة وخدمات مميزة تعكس جودة عملنا وتلبي تطلعات عملائنا.</p>
+
+        <div class="hero-offer">عروض استثنائية كافه</div>
+
+        <!-- الازرار -->
+        <div class="hero-buttons">
+            <a href="tel:0558864363" class="btn-call">اتصل الان</a>
+            <a href="https://wa.me/966558864363" target="_blank" class="btn-whatsapp">تواصل واتساب</a>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    animation: slideHero 50s infinite ease-in-out;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    z-index: 0;
+}
+
+/* طبقة التعتيم */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.65);
+    z-index: -1;
+}
+
+/* تنسيق الازرار */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-call {
+    background: #ff7f00; /* برتقالي */
+    color: #fff;
+}
+.btn-call:hover {
+    background: #e66f00;
+}
+
+.btn-whatsapp {
+    background: #25D366; /* اخضر واتساب */
+    color: #fff;
+}
+.btn-whatsapp:hover {
+    background: #1ebe5a;
+}
+
+@keyframes slideHero {
+    0% { background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920'); }
+    20% { background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920'); }
+    40% { background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920'); }
+    60% { background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920'); }
+    80% { background-image: url('https://images.unsplash.com/photo-1631541909066-6f0a1b9d2d3e?w=1920'); }
+    100% { background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920'); }
+}
+
+/* خلي النص ابيض */
+.hero h1, .hero p { color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+</style>
+  
+
+    <!-- قسم الخدمات -->
+    <section class="section-padding" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title-blue">خدماتنا</h2>
+            <div class="decorative-dots">♦♦♦♦♦♦♦♦♦♦♦</div>
+            <p class="services-intro">نقدم خدمات متكاملة بجودة عالية وتنفيذ احترافي لكافه مجالات اعمالنا، مع تصاميم عصرية تناسب مختلف المساحات وخامات متينة تتحمل الظروف المناخية. نحرص على أدق التفاصيل لنمنحك حلولًا تجمع بين المتانة والجمال بأفضل قيمة.</p>
+            
+            <div class="cards-grid">
+                
+                
+                <!-- بطاقة خدمة 1 -->
+                <div class="service-card">
+                    <h3>مظلات سيارات</h3>
+                    <p>مظلات السيارات توفر حماية فعالة للمركبات من أشعة الشمس المباشرة والأمطار والعوامل الجوية المختلفة، مما يساعد في الحفاظ على الطلاء وتقليل ارتفاع درجة الحرارة داخل السيارة. تتميز بتصاميم عصرية وخامات متينة.</p>
+                    <div class="service-image-placeholder">
+    <img src="images/pic1.jpg" alt="مظلة سيارات" style="width: 100%; border-radius: 8px;">
+</div>
+                     
+        
+        <!-- الزر الجديد الذي ينقلك إلى صفحة مظلات السيارات -->
+        <a href="cars.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+
+    
+     <!-- بطاقة خدمة 2 -->
+    <div class="service-card">
+        <h3>مظلات مدارس</h3>
+        <p>مظلات المدارس توفر بيئة تعليمية مريحة وآمنة للطلاب من خلال حماية الساحات والممرات من أشعة الشمس المباشرة والأمطار، مما يساعد على تقليل الحرارة داخل المساحات المفتوحة وجعل أوقات الفسح أكثر راحة.</p>
+        
+ <div class="service-image-placeholder">
+    <img src="images/pic2.jpg" alt="مظلات مدارس" style="width: 100%; border-radius: 8px;">
+</div>
+        
+        <!-- الزر الجديد الذي ينقلك إلى صفحة مظلات المدارس (schools.html) -->
+        <a href="schools.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div> <!-- هنا نهاية بطاقة مظلات المدارس -->
+    
+    
+           <!-- بطاقة خدمة 4 -->
+                <div class="service-card">
+                    <h3>تغطيات مسابح</h3>
+                    <p>مظلات المسابح توفر حماية فعّالة من أشعة الشمس المباشرة، مما يساعد على تقليل الحرارة حول المسبح وجعل الأجواء أكثر راحة أثناء السباحة أو الجلوس، كما تساهم في تقليل تبخر المياه وحماية المسبح.</p>
+  <div class="service-image-placeholder">
+    <img src="images/pic3.jpg" alt="مظلات مسابح" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+
+                <a href="pools.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+
+                <!-- بطاقة خدمة 5 -->
+                <div class="service-card">
+                    <h3>مظلات قماش pvc</h3>
+                    <p>مظلات قماش pvc تتميز بتصميمها الهندسي الأنيق الذي يوفر تصريفاً ممتازاً لمياه الأمطار من جميع الاتجاهات، مع قدرة عالية على تحمل الرياح والعوامل الجوية المختلفة، مما يجعلها خياراً عملياً وآمناً.</p>
+ 
+   <div class="service-image-placeholder">
+    <img src="images/pic4.jpg" alt="مظلات قماش pvc" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="makhruti.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+                   
+         <!-- بطاقة خدمة 7 -->
+                <div class="service-card">
+                    <h3>السواتر</h3>
+                    <p>سواتر احواش توفر خصوصية عالية للمنازل والاستراحات والمرافق المختلفة، مع حماية فعّالة من أشعة الشمس والعوامل الجوية مثل الرياح والغبار، كما تتميز بخفة الوزن وسهولة التركيب والصيانة.</p>
+                 
+                    <div class="service-image-placeholder">
+    <img src="images/pic5.jpg" alt="سواتر قص ليزر" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="sawatr.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+
+                 <!-- بطاقة خدمة 11 -->
+                 <div class="service-card">
+                    <h3>البرجولات والجلسات</h3>
+                    <p>تركيب البرجولات يساهم في توفير مساحات خارجية مريحة ومظللة مناسبة للجلوس والاسترخاء في الحدائق والاستراحات والمنازل، مع حماية فعّالة من أشعة الشمس المباشرة.</p>
+                       <div class="service-image-placeholder">
+    <img src="images/pic6.jpg" alt="برجولات والجلسات" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="pergolas.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+                <!-- بطاقة خدمة 12 -->
+                <div class="service-card">
+                    <h3>تنسيق حدائق</h3>
+                    <p>تنسيق الحدائق يساهم في تحويل المساحات الخارجية إلى أماكن جميلة ومنظمة تجمع بين الراحة والطبيعة، من خلال توزيع النباتات والمساحات الخضراء بشكل متناسق.</p>
+                                      <div class="service-image-placeholder">
+    <img src="images/pic7.jpg" alt="تنسيق حدائق" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="landscaping.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    <!-- بطاقة خدمة 11 -->
+<div class="service-card">
+    <h3>بديل الخشب WPC</h3>
+    <p>مظلات وارضيات وتغطيات مسابح بديل الخشب WPC تضفي مظهراً فخماً ودافئاً للمكان. مقاوم للماء والرطوبة والحشرات، مع سهولة في التنظيف وعمر افتراضي طويل للاستخدام الخارجي.</p>
+    <div class="service-image-wpc">
+        <img src="images/wpc1.jpg" alt="ارضيات بديل الخشب WPC" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="wpc.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+</div>
+                    <!-- بطاقة خدمة 12 -->
+                <div class="service-card">
+                    <h3>مجالس زجاج</h3>
+                    <p>مجالس زجاج عازلة للصوت والحرارة. استمتع بجلسة خارجية أنيقة طول السنة مع إطلالة بانورامية وحماية كاملة من العوامل الجوية<div 
+                    class="service-image-placeholder">
+    <img src="images/مجلس1.jpg" alt="مجالس زجاج" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="mjals.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+                    <!-- بطاقة خدمة 17 -->
+                <div class="service-card">
+                    <h3>دهانات داخلية وخارجيه</h3>
+                    <p>نحن في رؤية الظل نقدم حلول متكاملة للدهانات الداخلية بجودة عالية، باستخدام أحدث التقنيات والمواد الأصلية التي تمنح منزلك أو مكتبك لمسة جمالية راقية تدوم طويلًا.</p>
+                                  <div class="service-image-placeholder">
+    <img src="images/pic12.jpg" alt="دهانات" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="paints.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+    
+                  
+                <!-- بطاقة خدمة 19 -->
+                <div class="service-card">
+                    <h3>الديكورات</h3>
+                    <p>نقدم مجموعة واسعة من التصاميم التي تناسب جميع الأذواق، من الكلاسيكية الفاخرة إلى العصرية البسيطة، مع تنفيذ احترافي يضمن الجودة والدقة.</p>
+                    
+                                     <div class="service-image-placeholder">
+    <img src="images/pic14.jpg" alt="الديكورات" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="decor.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+        
+                <!-- بطاقة خدمة 18 -->
+                <div class="service-card">
+                    <h3>ترميم مباني</h3>
+                    <p>نقدم خدمات ترميم شاملة للمباني السكنية والتجارية، باستخدام أحدث المواد والتقنيات لضمان إعادة المبنى إلى حالته المثالية مع لمسة عصرية تضيف قيمة وجمالًا.</p>
+                  
+                                   <div class="service-image-placeholder">
+    <img src="images/pic13.jpg" alt="ترميم مباني" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="renovation.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+               
+
+                 <!-- بطاقة خدمة 13 -->
+                 <div class="service-card">
+                    <h3>تركيب ساندوتش بانل</h3>
+                    <p>تركيب الساندويش بانل يوفر حلول بناء عصرية تتميز بالعزل الحراري والمائي العالي، مما يساعد على الحفاظ على درجة حرارة مناسبة داخل المباني وتقليل تأثير العوامل الجوية.</p>
+                                       <div class="service-image-placeholder">
+    <img src="images/pic8.jpg" alt="ساندويش بنل" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="sandwich-panel.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+                    
+                    
+                    
+                 <!-- بطاقة خدمة 14 -->
+                 <div class="service-card">
+                    <h3>خيام وبيوت شعر</h3>
+                    <p>تركيب الخيام وبيوت الشعر يوفر جلسات تراثية مميزة تجمع بين الأصالة والراحة، مع أجواء مناسبة للضيافة والمناسبات والاستراحات، كما تتميز بقدرتها على مقاومة العوامل الجوية.</p>
+                  
+                                 <div class="service-image-placeholder">
+    <img src="images/pic9.jpg" alt="خيام وبيوت شعر" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="tents.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+      
+                  
+                <!-- بطاقة خدمة 15 -->
+                <div class="service-card">
+                    <h3>قرميد</h3>
+                    <p>خدمة تركيب القرميد تعتبر من أهم الحلول العصرية لحماية الأسطح والمباني في المملكة، حيث يجمع القرميد بين الجمال المعماري والقوة العملية، مقاوم للعوامل الجوية مثل الأمطار والحرارة.</p>
+                                     <div class="service-image-placeholder">
+    <img src="images/pic10.jpg" alt="القرميد" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="qarmid.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+                  <!-- بطاقة خدمة 16 -->
+                <div class="service-card">
+                    <h3>هناجر ومستودعات</h3>
+                    <p>خدمة بناء وتركيب الهناجر والمستودعات في الرياض تعتبر الحل الأمثل للشركات والمشاريع الصناعية والتجارية التي تبحث عن مساحات واسعة وآمنة لتخزين البضائع.</p>
+                   
+                                    <div class="service-image-placeholder">
+    <img src="images/pic11.jpg" alt="الهناجر والمستودعات" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="hangers.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+                <!-- بطاقة خدمة 20 -->
+                <div class="service-card">
+                    <h3>أعمال الشبوك</h3>
+                    <p>خدمة أعمال الشبوك بالرياض تعتبر الحل المثالي لتأمين الأراضي، المزارع، الاستراحات، والمشاريع التجارية والصناعية. نحن نقدم أفضل أنواع الشبوك المعدنية والحديدية.</p>
+                    
+                                     <div class="service-image-placeholder">
+    <img src="images/pic15.jpg" alt="شبوك مزارع" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="shabak.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    
+
+                <!-- بطاقة خدمة 21 -->
+                <div class="service-card">
+                    <h3>أعمال الابواب والشبابيك</h3>
+                    <p>نقدم أفضل التصاميم الحديثة والكلاسيكية للأبواب والشبابيك، باستخدام مواد عالية الجودة مثل الخشب، الألمنيوم، والحديد، مع تنفيذ احترافي يضمن المتانة والأمان.</p>
+                                  <div class="service-image-placeholder">
+    <img src="images/pic16.jpg" alt="الابواب والشبابيك" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+</div>
+        <a href="doors-windows.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+        
+    </div>
+    <!-- بطاقة خدمة 21 -->
+<div class="service-card">
+    <h3>الصيانة فك وتركيب</h3>
+    <p>خدمات صيانة فورية في الرياض. فك وتركيب ابواب وشبابيك ومظلات. تغيير مغالق ومفصلات + تلحيم + معالجة صدأ. نجيك لحد عندك خدمة 24 ساعة.</p>
+    <div class="service-image-placeholder">
+        <img src="images/pic17.jpg" alt="الصيانة فك وتركيب" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+    <a href="maintenance.html" class="btn-blue"><i class="fa-solid fa-arrow-left"></i>عرض القسم</a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم لماذا نحن -->
+    <section class="dark-section section-padding">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title-orange">لماذا نحن</h2>
+            <div class="decorative-dots">♦♦♦♦♦♦♦♦♦♦♦</div>
+            
+            <ul class="why-us-list">
+                <li><i class="fa-solid fa-check-double"></i> جودة في المواد</li>
+                <li><i class="fa-solid fa-helmet-safety"></i> الاتقان في العمل</li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i> أسعار تنافسية</li>
+                <li><i class="fa-solid fa-fighter-jet"></i> سرعة التنفيذ</li>
+            </ul>
+
+            <p style="margin-bottom: 15px;">في عالم يزداد فيه الاهتمام بالجودة والتصميم، يبرز حداد مظلات برجولات الرياض كاسم يجمع بين الاحتراف والدقة في تنفيذ الحلول المتكاملة. نعمل على تقديم أعمال عصرية بخامات متينة تضمن أعلى مستويات الجودة والاستدامة.</p>
+            <p style="margin-bottom: 25px;">مع تطور احتياجات البناء والتصميم الخارجي، يأتي حداد مظلات برجولات الرياض ليقدم حلولًا مبتكرة تجمع بين الجمال والقوة. نلتزم بتنفيذ أعمال عالية الجودة تعكس الاحتراف وتلبي تطلعات العملاء بأفضل صورة.</p>
+            
+       
+    </section>
+
+
+<section id="all-services" style="padding: 50px 20px; background: #ffffff; max-width: 900px; margin: 0 auto; direction: rtl; text-align: right; font-family: 'Tajawal', sans-serif;">
+
+    <!-- العنوان الرئيسي -->
+    <div style="text-align: center; margin-bottom: 35px;">
+        <h2 style="color: #222; font-size: 2rem; font-weight: 800; margin: 0 0 10px 0;">جميع خدماتنا في الترميم والإنشاء والمقاولات</h2>
+        <p style="color: #666; font-size: 1.1rem; margin: 0;">حلول متكاملة بضمان 5 سنوات</p>
+        <div style="width: 70px; height: 3px; background: var(--secondary-orange, #ff7f00); margin: 15px auto; border-radius: 2px;"></div>
+    </div>
+
+    <!-- المحتوى المتصل بدون ارقام -->
+    <div style="line-height: 2.2; font-size: 1.05rem; color: #444;">
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">ترميم المباني والمنازل والفلل والشقق</h3>
+        <p>نحن متخصصون في <b>ترميم المباني والمنازل والفلل والشقق والعمائر</b> في الرياض. نقوم بإعادة تأهيل المباني الحكومية، المدارس، والمستشفيات بأحدث التقنيات. نقدم <b>ترميم إنشائي</b>، <b>معالجة التشققات والتصدعات</b>، <b>معالجة الرطوبة والتسربات</b>، <b>عزل الأسطح والحمامات</b>، <b>تجديد الكهرباء والسباكة</b>، و<b>تجديد التشطيبات الداخلية والخارجية</b> مع ضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">توريد وتركيب الساندوتش بانل</h3>
+        <p>نقوم بـ <b>توريد وتركيب الساندوتش بانل</b> للمستودعات، الهناجر، المصانع، الغرف الجاهزة، وغرف التبريد والتجميد. ألواح معزولة ببولي يوريثان وصوف صخري بسماكات 4سم و 5سم و 10سم. <b>عزل حراري 95%</b> و<b>عزل صوت وماء</b> ومقاومة للرياح مع تركيب خلال 7 أيام.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تصميم وتركيب الخيام وبيوت الشعر</h3>
+        <p>نفذ <b>الخيام الملكية</b>، <b>بيوت الشعر التراثية</b>، <b>الخيام الأوروبية للحفلات</b>، و<b>خيام المخيمات والكشتات</b>. نستخدم أقمشة PVC مستوردة عازلة للحرارة والماء وهياكل حديد مجلفنة مع إضاءة وتكييف وتفصيل داخلي كامل وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب القرميد للأسطح والواجهات</h3>
+        <p>نوفر <b>القرميد الفخاري الإسباني والإيطالي</b>، <b>القرميد المعدني والزنك</b>، و<b>القرميد البلاستيك PVC</b> للأسطح والواجهات والفلل والمساجد. تركيب مع عازل مائي وحراري ومقاوم للرياح والشمس والأمطار مع ضمان 5 سنوات شامل.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">بناء الهناجر والمستودعات الحديد</h3>
+        <p>نصمم وننفذ <b>الهناجر الحديدية</b>، <b>المستودعات الجاهزة</b>، <b>المخازن</b>، <b>الورش</b>، <b>المعارض</b>، و<b>الصالات الرياضية</b>. هياكل حديد مجلفنة مقاومة للصدأ والزلازل مع تغطية ساندوتش بانل وصاج عازل. نوفر دراسة هندسية وترخيص البلدية وتركيب خلال 15 يوم وضمان 10 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب الشبوك والسياج</h3>
+        <p>نقوم بتركيب <b>الشبوك الزراعية</b>، <b>الشبوك الأمنية</b>، <b>الشبوك الملحومة</b>، <b>الشبوك المجلفنة</b>، و<b>شبوك PVC</b> للمزارع والاستراحات والمدارس والمصانع. أسلاك مجلفنة على الحار مقاومة للصدأ مع أعمدة حديد وخرسانة وبوابات حديد وأسلاك شائكة وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تصنيع وتركيب الأبواب والشبابيك</h3>
+        <p>نصنع ونركب <b>أبواب وشبابيك الألمنيوم دبل جلاس</b>، <b>أبواب PVC</b>، <b>أبواب خشب طبيعي ومصفحة</b>، <b>أبواب سحاب</b>، و<b>واجهات زجاج سيكوريت</b>. عزل صوت وحرارة 90% واكسسوارات إيطالية ودهان الكتروستاتيك وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">صيانة وفك ونقل وتركيب المظلات والبرجولات والسواتر</h3>
+        <p>نقدم <b>صيانة شاملة</b> لجميع أنواع المظلات والبرجولات والسواتر. خدماتنا تشمل <b>فك ونقل وتركيب</b>، <b>تغيير القماش والتغطية</b>، <b>لحام ومعالجة الصدأ</b>، <b>إعادة الدهان</b>، <b>صيانة الهيكل الحديد</b>، و<b>صيانة البرجولات الخشبية</b>. معاينة خلال 24 ساعة وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب المظلات بجميع أنواعها</h3>
+        <p>نفذ <b>مظلات سيارات</b>، <b>مظلات مسابح</b>، <b>مظلات مدارس</b>، <b>مظلات حدائق</b>، و<b>مظلات مداخل</b>. قماش PVC كوري وألماني، هيكل حديد مجلفن مقاوم للصدأ، تصاميم هرمية ومقوسة ومعلقة مع عزل مائي وحراري وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب البرجولات الخشبية والحديد</h3>
+        <p>نصمم <b>برجولات خشبية</b> من خشب البولى ايثيلين المعالج، و<b>برجولات حديد</b>، و<b>برجولات متحركة</b> للحدائق والاستراحات والأسطح. نضيف إضاءة LED، ستائر جانبية، ونظام تظليل متكامل بتصاميم عصرية وتراثية.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب السواتر بجميع أنواعها</h3>
+        <p>نوفر <b>سواتر مجدول</b>، <b>سواتر شرائح</b>، <b>سواتر قماش</b>، و<b>سواتر حديد</b> لحماية الأسطح والفلل والمزارع. عازلة للرؤية والشمس والغبار 100%، تركيب بأسلاك مجلفنة وأعمدة قوية وضمان 5 سنوات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">عزل الأسطح والخزانات والمسابح</h3>
+        <p>نقدم <b>عزل مائي وحراري</b> للأسطح، <b>عزل خزانات المياه</b>، و<b>عزل المسابح</b> باستخدام مواد البيتومين، البولي يوريثان، والفوم. معالجة التسربات وضمان 10 سنوات ضد التسريب.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">أعمال الدهانات والديكور</h3>
+        <p>ننفذ <b>دهانات داخلية وخارجية</b>، <b>دهانات ديكورية</b>، <b>ورق جدران</b>، <b>بديل الخشب</b>، و<b>بديل الرخام</b>. فريق متخصص في تشطيب الفلل والشقق والمكاتب بأجود أنواع الدهانات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">أعمال السباكة والكهرباء</h3>
+        <p>خدمات <b>تأسيس وتشطيب السباكة</b>، <b>صيانة تسربات المياه</b>، <b>تأسيس الكهرباء</b>، <b>تركيب الإنارة</b>، و<b>أنظمة السمارت هوم</b>. جميع الأعمال بمواصفات عالية وضمان.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">أعمال البلاط والرخام والسيراميك</h3>
+        <p>تركيب <b>البلاط</b>، <b>الرخام</b>، <b>السيراميك</b>، <b>البورسلان</b> للأرضيات والجدران. تسوية الأرضيات، تركيب الوزرات، وتشطيب الحمامات والمطابخ باحترافية.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">بناء الملاحق والغرف الجاهزة</h3>
+        <p>نبني <b>ملاحق خارجية</b>، <b>غرف سائق</b>، <b>مجالس خارجية</b>، و<b>غرف جاهزة</b> باستخدام الهياكل الحديدية والساندوتش بانل. تركيب سريع خلال 10 أيام وتشطيب كامل.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تنسيق الحدائق والشلالات والنوافير</h3>
+        <p>تصميم <b>تنسيق الحدائق</b>، <b>تركيب العشب الصناعي والطبيعي</b>، <b>أنظمة الري</b>، <b>الشلالات</b>، <b>النوافير</b>، و<b>جلسات خارجية</b> للفلل والاستراحات.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">تركيب الزجاج والواجهات</h3>
+        <p>نركب <b>واجهات زجاج سيكوريت</b>، <b>واجهات كلادينج</b>، <b>قواطع زجاج للمكاتب</b>، و<b>درابزين زجاج</b>. زجاج عازل للصوت والحرارة بسماكات مختلفة.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">أعمال الحدادة واللحام</h3>
+        <p>جميع <b>أعمال الحدادة</b>: <b>بوابات حديد</b>، <b>درابزين</b>، <b>مظلات حديد</b>، <b>هياكل معدنية</b>، و<b>لحام</b>. تنفيذ حسب الطلب بمواصفات عالية.</p>
+
+        <h3 style="color: var(--primary-blue, #0d47a1); font-size: 1.4rem; margin-top: 30px; margin-bottom: 12px; font-weight: 700;">المقاولات العامة والبناء</h3>
+        <p>نقدم <b>خدمات المقاولات العامة</b>: <b>بناء الفلل</b>، <b>العمائر</b>، <b>المجمعات السكنية</b> من الصفر حتى المفتاح. إشراف هندسي، مواد أصلية، وتسليم في الوقت المحدد.</p>
+
+    </div>
+
+</section>
+
+
+    <!-- قسم من نحن -->
+    <section class="dark-section section-padding" id="contact" style="border-top: none;">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title-orange">من نحن</h2>
+                <div class="decorative-dots">♦♦♦♦♦♦♦♦♦♦♦</div>
+                
+                <h3 style="margin: 20px 0;">مقاولات عامه حداده، دهانات، ترميم   الرياض<br></h3>
+                <h2 style="color: var(--text-light); margin-bottom: 20px;"><i class="fa-solid fa-phone"></i></h2>
+                
+            <p>
+  متخصصون في تنفيذ جميع أعمال المظلات والسواتر وبيوت الشعر والهناجر والمستودعات والبرجولات وتنسيق الحدائق والدهانات والديكورات، بخبرة عملية تمتد في هذا المجالات مع التزام كامل بالجودة والدقة في التنفيذ. نعمل على تقديم حلول متكاملة تناسب احتياجات العملاء المختلفة، مع تصميمات عصرية تجمع بين القوة والمتانة والمظهر الجمالي الذي يضيف قيمة للمكان.</p>
+                <p>ونهدف دائماً إلى تقديم خدمة احترافية ترضي العميل وتلبي تطلعاته، مع الالتزام بالسرعة في الإنجاز والجودة في التنفيذ، لنكون خياراً موثوقاً في مجالات أعمالنا.</p>
+            </div>
+                
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم لماذا نحن -->
+    <section class="dark-section section-padding">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title-orange">لماذا نحن</h2>
+            <div class="decorative-dots">♦♦♦♦♦♦♦♦♦♦♦</div>
+            
+            <ul class="why-us-list">
+                <li><i class="fa-solid fa-check-double"></i> جودة في المواد</li>
+                <li><i class="fa-solid fa-helmet-safety"></i> الاتقان في العمل</li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i> أسعار تنافسية</li>
+                <li><i class="fa-solid fa-fighter-jet"></i> سرعة التنفيذ</li>
+            </ul>
+
+            <p style="margin-bottom: 15px;">في عالم يزداد فيه الاهتمام بالجودة والتصميم، يبرز حداد مظلات برجولات الرياض كاسم يجمع بين الاحتراف والدقة في تنفيذ الحلول المتكاملة. نعمل على تقديم أعمال عصرية بخامات متينة تضمن أعلى مستويات الجودة والاستدامة.</p>
+            <p style="margin-bottom: 25px;">مع تطور احتياجات البناء والتصميم الخارجي، يأتي حداد مظلات برجولات الرياض ليقدم حلولًا مبتكرة تجمع بين الجمال والقوة. نلتزم بتنفيذ أعمال عالية الجودة تعكس الاحتراف وتلبي تطلعات العملاء بأفضل صورة.</p>
+            
+       
+    </section>
+    
+
+
+<!-- تذييل الموقع -->
+<footer style="background: #0d1b4c; color: #ffffff; padding: 40px 20px; text-align: center; direction: rtl; font-family: 'Tajawal', sans-serif; margin: 0; border: 0;">
+    
+    <!-- النص العلوي -->
+    <div style="max-width: 800px; margin: 0 auto 20px auto; line-height: 2;">
+        <p style="font-size: 1.05rem; margin: 0;">
+            
+        </p>
+    </div>
+
+    <!-- خط فاصل برتقالي واحد فقط -->
+    <div style="width: 60%; height: 1px; background: var(--secondary-orange, #ff7f00); margin: 0 auto 20px auto;"></div>
+
+    <!-- حقوق النشر -->
+    <div style="font-size: 0.95rem; line-height: 1.8;">
+        <p style="margin: 0 0 5px 0;">
+            © جميع الحقوق محفوظة "مقاولات عامة"
+        </p>
+        <p style="margin: 0;">
+            تصميم وتنفيذ حسن الطاهري 773280289
+        </p>
+    </div>
+
+</footer>
+  
+  
+  
+    <footer>
+        <div class="container">
+            <!-- محتويات الفوتر -->
+        </div>
+    </footer>
+
+    <!-- 3. ضع كود الجافاسكريبت هنا قبل نهاية الـ body -->
+    <script>
+    function showPhotos(event, sectionId) {
+        // هذا السطر يمنع المتصفح من القفز لأعلى الصفحة
+        event.preventDefault(); 
+        
+        // إظهار قسم الصور المخفي
+        var extraPhotos = document.getElementById(sectionId);
+        if (extraPhotos.style.display === "none") {
+            extraPhotos.style.display = "block";
+        } else {
+            extraPhotos.style.display = "none"; // لإخفائها عند الضغط مرة أخرى
+        }
+    }
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
+
